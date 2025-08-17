@@ -168,7 +168,112 @@ const about = {
   label: "About",
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
-  // This page is now disabled as content moved to home
+  tableOfContent: {
+    display: true,
+    subItems: false,
+  },
+  avatar: {
+    display: true,
+  },
+  calendar: {
+    display: true,
+    link: "https://cal.com",
+  },
+  intro: {
+    display: true,
+    title: "Introduction",
+    description: (
+      <>
+        I'm Faudhia Makosa, a UI/UX and Graphic Designer who creates websites,
+        apps, and visuals that are easy to use and visually appealing. I focus
+        on making designs that help people navigate smoothly while enjoying the
+        look and feel. My goal is to turn ideas into designs that work well and
+        leave a positive impression.
+      </>
+    ),
+  },
+  work: {
+    display: true, // set to false to hide this section
+    title: "Work Experience",
+    experiences: [
+      {
+        company: "Freelance",
+        timeframe: "2020 - Present",
+        role: "UI/UX and Graphic Designer",
+        achievements: [
+          <>
+            Experience in UI/UX design, website design, graphic design, and
+            multimedia content creation. My work includes creating marketing
+            materials, event posters, branding, interactive user interfaces, and
+            various websites for both personal projects and clients.
+          </>,
+          <>
+            Work closely with teams and clients to make sure every design meets
+            user needs and follows modern design trends.
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
+  studies: {
+    display: true, // set to false to hide this section
+    title: "Studies",
+    institutions: [
+      {
+        name: "University of Dodoma",
+        description: <>Bachelor's degree in Multimedia</>,
+      },
+      {
+        name: "Coursera",
+        description: <>Google UX Design Professional Certificate</>,
+      },
+    ],
+  },
+  technical: {
+    display: true, // set to false to hide this section
+    title: "Technical skills",
+    skills: [
+      {
+        title: "UI/UX Design",
+        description: <>Figma, Adobe XD, Wireframing, Prototyping</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-02.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Graphic Design",
+        description: <>Adobe Illustrator, Photoshop</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Motion & Multimedia",
+        description: <>After Effects, Premiere Pro</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+    ],
+  },
 };
 
 const blog = {
