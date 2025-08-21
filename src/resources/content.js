@@ -8,7 +8,7 @@ const person = {
   },
   role: "UI/UX and Graphic Designer",
   avatar: "/Faudhia.jpeg",
-  email: "faudhia@example.com",
+  email: "faudhiamakosa@gmail.com",
   location: "Africa/Dar_es_Salaam", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Swahili"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -28,19 +28,9 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
-  {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/faudhia-makosa-955b472a6/",
   },
   {
     name: "Email",
@@ -111,53 +101,53 @@ const home = {
         name: "University of Dodoma",
         description: <>Bachelor's degree in Multimedia</>,
       },
-      {
-        name: "Coursera",
-        description: <>Google UX Design Professional Certificate</>,
-      },
     ],
   },
-  technical: {
+  certifications: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
+    title: "Certifications",
+    certificates: [
       {
-        title: "UI/UX Design",
-        description: <>Figma, Adobe XD, Wireframing, Prototyping</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Google UX Design Professional Certificate",
+        issuer: "Coursera",
+        date: "2024",
+        description: <>Comprehensive program covering user experience design principles, research methods, wireframing, prototyping, and usability testing.</>,
+        image: {
+          src: "/certificate/coursera-cert-1.jpg",
+          alt: "Google UX Design Professional Certificate",
+          width: 16,
+          height: 9,
+        },
+        pdfUrl: "/certificate/Coursera EPLYPU7R88PA.pdf",
+        credentialUrl: "https://coursera.org/share/3c052fb7b9b69d47cdc07fd29a6836b9",
       },
       {
-        title: "Graphic Design",
-        description: <>Adobe Illustrator, Photoshop</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "User Experience Research and Design Specialization",
+        issuer: "Coursera",
+        date: "2024",
+        description: <>Advanced specialization in UX research methodologies, user-centered design principles, and design thinking processes.</>,
+        image: {
+          src: "/certificate/coursera-cert-2.jpg",
+          alt: "User Experience Research and Design Specialization Certificate",
+          width: 16,
+          height: 9,
+        },
+        pdfUrl: "/certificate/Coursera PA39REBAC6XF.pdf",
+        credentialUrl: "https://coursera.org/share/f60f7d9d2808416ec87ff6dc6ad57aad",
       },
       {
-        title: "Motion & Multimedia",
-        description: <>After Effects, Premiere Pro</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [],
+        title: "Interaction Design Specialization",
+        issuer: "Coursera",
+        date: "2024",
+        description: <>Specialized training in interaction design, interface design patterns, and creating engaging user experiences.</>,
+        image: {
+          src: "/certificate/coursera-cert-3.jpg",
+          alt: "Interaction Design Specialization Certificate",
+          width: 16,
+          height: 9,
+        },
+        pdfUrl: "/certificate/Coursera Q5MAEA925HVL_2.pdf",
+        credentialUrl: "https://coursera.org/share/082830274b55b1de0c16a3e729aaf76e",
       },
     ],
   },
@@ -224,53 +214,53 @@ const about = {
         name: "University of Dodoma",
         description: <>Bachelor's degree in Multimedia</>,
       },
-      {
-        name: "Coursera",
-        description: <>Google UX Design Professional Certificate</>,
-      },
     ],
   },
-  technical: {
+  certifications: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
+    title: "Certifications",
+    certificates: [
       {
-        title: "UI/UX Design",
-        description: <>Figma, Adobe XD, Wireframing, Prototyping</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Google UX Design Professional Certificate",
+        issuer: "Coursera",
+        date: "2024",
+        description: <>Comprehensive program covering user experience design principles, research methods, wireframing, prototyping, and usability testing.</>,
+        image: {
+          src: "/certificate/coursera-cert-1.jpg",
+          alt: "Google UX Design Professional Certificate",
+          width: 16,
+          height: 9,
+        },
+        pdfUrl: "/certificate/Coursera EPLYPU7R88PA.pdf",
+        credentialUrl: "https://coursera.org/share/3c052fb7b9b69d47cdc07fd29a6836b9",
       },
       {
-        title: "Graphic Design",
-        description: <>Adobe Illustrator, Photoshop</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "User Experience Research and Design Specialization",
+        issuer: "Coursera",
+        date: "2024",
+        description: <>Advanced specialization in UX research methodologies, user-centered design principles, and design thinking processes.</>,
+        image: {
+          src: "/certificate/coursera-cert-2.jpg",
+          alt: "User Experience Research and Design Specialization Certificate",
+          width: 16,
+          height: 9,
+        },
+        pdfUrl: "/certificate/Coursera PA39REBAC6XF.pdf",
+        credentialUrl: "https://coursera.org/share/f60f7d9d2808416ec87ff6dc6ad57aad",
       },
       {
-        title: "Motion & Multimedia",
-        description: <>After Effects, Premiere Pro</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [],
+        title: "Interaction Design Specialization",
+        issuer: "Coursera",
+        date: "2024",
+        description: <>Specialized training in interaction design, interface design patterns, and creating engaging user experiences.</>,
+        image: {
+          src: "/certificate/coursera-cert-3.jpg",
+          alt: "Interaction Design Specialization Certificate",
+          width: 16,
+          height: 9,
+        },
+        pdfUrl: "/certificate/Coursera Q5MAEA925HVL_2.pdf",
+        credentialUrl: "https://coursera.org/share/082830274b55b1de0c16a3e729aaf76e",
       },
     ],
   },

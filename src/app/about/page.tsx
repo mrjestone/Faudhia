@@ -45,9 +45,9 @@ export default function About() {
       items: about.studies.institutions.map((institution) => institution.name),
     },
     {
-      title: about.technical.title,
-      display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
+      title: about.certifications.title,
+      display: about.certifications.display,
+      items: about.certifications.certificates.map((cert) => cert.title),
     },
   ];
   return (
@@ -267,49 +267,64 @@ export default function About() {
             </>
           )}
 
-          {about.technical.display && (
+          {about.certifications.display && (
             <>
               <Heading
                 as="h2"
-                id={about.technical.title}
+                id={about.certifications.title}
                 variant="display-strong-s"
                 marginBottom="40"
               >
-                {about.technical.title}
+                {about.certifications.title}
               </Heading>
               <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text id={skill.title} variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
+                {about.certifications.certificates.map((cert, index) => (
+                  <Column key={`${cert.title}-${index}`} fillWidth gap="4">
+                    <Text id={cert.title} variant="heading-strong-l">
+                      {cert.title}
                     </Text>
-                    {skill.images && skill.images.length > 0 && (
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {cert.issuer} • {cert.date}
+                    </Text>
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {cert.description}
+                    </Text>
+                    {cert.image && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
+                        <Flex
+                          border="neutral-medium"
+                          radius="m"
+                          minWidth={cert.image.width}
+                          height={cert.image.height}
+                        >
+                          <Media
+                            enlarge
                             radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <Media
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
+                            sizes={cert.image.width.toString()}
+                            alt={cert.image.alt}
+                            src={cert.image.src}
+                          />
+                        </Flex>
                       </Flex>
                     )}
+                    <Flex fillWidth gap="s" marginTop="s">
+                      <Button
+                        href={cert.pdfUrl}
+                        variant="secondary"
+                        size="s"
+                        target="_blank"
+                      >
+                        Download PDF
+                      </Button>
+                      <Button
+                        href={cert.credentialUrl}
+                        variant="tertiary"
+                        size="s"
+                        target="_blank"
+                      >
+                        View Credential
+                      </Button>
+                    </Flex>
                   </Column>
                 ))}
               </Column>
